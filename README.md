@@ -15,7 +15,7 @@ Daily commit.
 
 ---
 
-### Android
+### Algorithm
 
 - 
 
