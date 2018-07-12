@@ -16,7 +16,11 @@
 println(변수명.javaClass.name)
 `
  
+***
+ 
 ## 상수 선언 val
+
+***
 
 ## Data Type
 
