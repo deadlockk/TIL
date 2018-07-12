@@ -18,4 +18,16 @@ println(변수명.javaClass.name)
  
 ## 상수 선언 val
 
- 
+## Data Type
+
+* Byte(8bit)
+
+* Short(16bit)
+
+* Int(32bit)
+
+* Long(64bit)
+
+* Float(32bit)
+
+* Double(64bit)
