@@ -6,8 +6,9 @@
   var num2 : Float = 3.12f // float 는 f를 붙여주어야 함
   
   var num3 = 3.14 //Double
+  
+  // 뒤에 입력되는 type을 판단해서 스스로 지정해준다
 ```  
-_뒤에 입력되는 type을 판단해서 스스로 지정해준다_
   
 * 선언된 type 확인하는 방법
   
