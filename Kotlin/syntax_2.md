@@ -28,4 +28,4 @@ for( item in intArray ){
 }
 ```
 
-* while 
+* while 문
