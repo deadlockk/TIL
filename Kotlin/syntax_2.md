@@ -2,8 +2,7 @@
 
 * when 문
 
-``
-
+```
 var x = 1
 when(x){
   1 -> println("x=1")
@@ -12,8 +11,7 @@ when(x){
     println("x는 1 또는 2가 아니다")
   }
 }
-
-``
+```
 
 * for 문
 
