@@ -1,6 +1,12 @@
 ## 변수 선언 var
 
 ```
+  var c : Char = 'A'
+  
+  var b : Boolean = true
+  
+  var s : String = "My String"
+  
   var num1 : Int = 21_0000_0000
   
   var num2 : Float = 3.12f // float 는 f를 붙여주어야 함
