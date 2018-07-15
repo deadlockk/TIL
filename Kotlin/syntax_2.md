@@ -15,4 +15,17 @@ when(x){
 
 * for 문
 
+```
+//Range for 문
+for( x in 1..10 step 2 ){
+  println(x)
+}
+
+//Collection for 문
+var intArray = arrayOf(1, 10, 100)
+for( item in intArray ){
+  println(item)
+}
+```
+
 * while 
