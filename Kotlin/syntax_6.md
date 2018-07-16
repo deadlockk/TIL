@@ -28,7 +28,7 @@ var name (변수이름) : String? = "상원"
   println(name!!) //상원
 
 
-  var name ; String? = null
+  var name : String? = null
 
   println(name!!) //에러발생
   ```
@@ -39,5 +39,26 @@ var name (변수이름) : String? = "상원"
   println(name) // 상원    /* 자동적으로
                 // null       해제되어진다 */
   ```                
+
+* 안전 해제 2 (변수에 소속된 function 이나 하위 클래스에 접근하고자 할 때)
+
+  >>       
+
+  >  ┍ㅡㅡㅡ┑
+
+  > ㅣ name ㅣ  ------------------>  n a m e
+
+  >  ┕ㅡㅡㅡ┙        ? 해제
+
+  >>       
+
+  ```
+  var name : String? = "상원"
+  println(name?.length) // 2
+  
+  var name : String? = null
+  println(name?.length) // 물음표는 null을 캐치하여 에러를 발생시키지 않고 null 값만 
+
+  ```
   
   
