@@ -57,7 +57,7 @@ var name (변수이름) : String? = "상원"
   println(name?.length) // 2
   
   var name : String? = null
-  println(name?.length) // 물음표는 null을 캐치하여 에러를 발생시키지 않고 null 값만 
+  println(name?.length) // 물음표는 null을 캐치하여 에러를 발생시키지 않고 null 값만 출력한다
 
   ```
   
