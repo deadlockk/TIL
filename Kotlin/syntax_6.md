@@ -32,3 +32,12 @@ var name (변수이름) : String? = "상원"
 
   println(name!!) //에러발생
   ```
+
+* 안전 해제 1
+
+  ```
+  println(name) // 상원    /* 자동적으로
+                // null       해제되어진다 */
+  ```                
+  
+  
