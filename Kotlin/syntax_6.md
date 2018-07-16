@@ -21,3 +21,14 @@ var name (변수이름) : String? = "상원"
 >  ┕ㅡㅡㅡ┙        !! 강제해제
 
 >>       
+
+```
+var name : String? = "상원"
+
+println(name!!) //상원
+
+
+var name ; String? = null
+
+println(name!!) //에러발생
+```
