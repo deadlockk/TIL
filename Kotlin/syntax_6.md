@@ -12,23 +12,23 @@ var name (변수이름) : String? = "상원"
 
 * 강제 해제
 
->>       
+  >>       
 
->  ┍ㅡㅡㅡ┑
+  >  ┍ㅡㅡㅡ┑
 
-> ㅣ name ㅣ  ------------------>  n a m e
+  > ㅣ name ㅣ  ------------------>  n a m e
 
->  ┕ㅡㅡㅡ┙        !! 강제해제
+  >  ┕ㅡㅡㅡ┙        !! 강제해제
 
->>       
+  >>       
 
-```
-var name : String? = "상원"
+  ```
+  var name : String? = "상원"
 
-println(name!!) //상원
+  println(name!!) //상원
 
 
-var name ; String? = null
+  var name ; String? = null
 
-println(name!!) //에러발생
-```
+  println(name!!) //에러발생
+  ```
