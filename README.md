@@ -6,7 +6,7 @@ Daily commit.
 
 * [Kotlin](#Kotlin)
 * [Algorithm](#Algorithm)
-* [Distributed System](#Distributed System)
+* [DistributedSystem](#DistributedSystem)
 
 ---
 
