@@ -82,8 +82,7 @@ Daily commit.
 
 ### Algorithm
 
-
-    ```
+```
 #include <iostream>
 #include <ios>
 
@@ -96,10 +95,6 @@ int main() {
 
    return 0;
 }
-    ```
-
-basic 
-
 ---
 
 ### DistributedSystem
