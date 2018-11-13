@@ -12,6 +12,7 @@ Daily commit.
 
 ### Kotlin
 
+
   ### NULL SAFETY - nullpointexception
 
   * 선언
