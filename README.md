@@ -81,7 +81,7 @@ Daily commit.
 
 ### Algorithm
 
-- 
+- 푼 
 
 ---
 
