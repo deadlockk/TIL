@@ -7,7 +7,7 @@ using namespace std;
 int main() {
 	ios::sync_with_stdio(false);
 
-	int A, B;//Áø¹ı
+	int A, B;//ì§„ë²•
 	int result[20];
 	int m, value, power;
 	int Decimal_Notation = 0;
@@ -16,7 +16,7 @@ int main() {
 	cin >> A >> B;
 	cin >> m;
 
-	//10Áø¹ı »ı¼º
+	//10ì§„ë²• ìƒì„±
 	while (m--) {
 		power = 1;
 		cin >> value;
@@ -25,15 +25,16 @@ int main() {
 		Decimal_Notation = Decimal_Notation + (value * power);
 	}
 
-	//BÁø¹ıÀ¸·Î º¯È¯
+	//Bì§„ë²•ìœ¼ë¡œ ë³€í™˜
 	for (valueCheck = 0; Decimal_Notation > 0; valueCheck++) {
 		result[valueCheck] = Decimal_Notation % B;
 		Decimal_Notation = Decimal_Notation / B;
 	}
 
-	//¿ªÀ¸·Î Ãâ·Â
+	//ì—­ìœ¼ë¡œ ì¶œë ¥
 	for (auto j = valueCheck - 1; j >= 0; j--)
 		cout << result[j] << " ";
 
 	return 0;
+	
 }
