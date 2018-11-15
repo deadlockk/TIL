@@ -4,10 +4,6 @@
 
 using namespace std;
 
-/*
-원리
-53 mod 2 와(((5 mod 2) * 5 mod 2) * 5 mod 2)  는  같다는걸 이용
-*/
 int pow_mod(int x, int y, int p, int temp){
 	if (y == 1)return temp;
 	y--;
