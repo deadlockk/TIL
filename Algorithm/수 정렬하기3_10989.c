@@ -16,6 +16,7 @@ int main() {
 		if (arr[i] != 0)
 			for (int j = 0; j < arr[i]; ++j)
 				printf("%d\n", i);
+		
 	}
 	
 	
