@@ -14,3 +14,6 @@
 >>>EX : execute operation or calculate address
 >>>>MEM : access memory operand
 >>>>>WB : write back to register
+
+## Quiz 3
+1. computer A -> 
