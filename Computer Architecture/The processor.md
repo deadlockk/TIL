@@ -8,8 +8,8 @@
 >>>>data memory
 >>>>>register file
 
->IF
->>ID
->>>EX
->>>>MEM
->>>>>WB
+>IF : instruction fetch from memory
+>>ID : instruction decode & register read
+>>>EX : execute operation or calculate address
+>>>>MEM : access memory operand
+>>>>>WB : write back to register
