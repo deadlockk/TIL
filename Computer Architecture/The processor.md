@@ -20,11 +20,11 @@
 
     computer B -> 6 seconds run, 1.2 times of 2GHz( 2.4 GHz )
 
-    -    clock rate = clock cycles/cpu time
+    __clock rate = clock cycles/cpu time__
 
     A rate = 2/10 = 0.2
     B rate = 2.4/6 = 0.4
 
-    Ans : B must have twice the clock rate of A.
+    **Ans : B must have twice the clock rate of A.**
 
-2.
+2. 
