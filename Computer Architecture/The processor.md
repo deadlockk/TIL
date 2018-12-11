@@ -19,3 +19,4 @@
 1. computer A -> 10 seconds run, 2GHz clock
 
     computer B -> 6 seconds run, 1.2 times of 2GHz
+
