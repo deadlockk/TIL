@@ -16,6 +16,7 @@ void enQueue(char item){
 }
 
 int main() {
+	
 	char item;
 	ios::sync_with_stdio(false);
 	cin >> N;
