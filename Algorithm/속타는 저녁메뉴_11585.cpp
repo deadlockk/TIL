@@ -12,8 +12,7 @@ int current[MAX];
 
 void enQueue(char item){
 		rear = (rear + 1) % N;
-		menu[rear] = item;
-	
+		menu[rear] = item;	
 }
 
 int main() {
