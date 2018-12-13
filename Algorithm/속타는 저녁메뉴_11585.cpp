@@ -25,7 +25,7 @@ int main() {
 	}
 	for (auto i = 0; i < N; i++) {
 		cin >> current[i];
-		
+	
 	}
 	return 0;
 }
