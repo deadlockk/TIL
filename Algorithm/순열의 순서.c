@@ -10,6 +10,7 @@ int N, Q;
 int k = 0;
 
 int main() {
+	
 	int depth = 0;
 
 	scanf_s("%d", &N);
