@@ -36,6 +36,7 @@ void perm(int depth, int N, int k) {
 	for (int i = depth; i < N; i++) {
 		swap(i, depth);
 		perm(depth + 1, N, k);
+	
 		swap(i, depth);
 	}
 }
