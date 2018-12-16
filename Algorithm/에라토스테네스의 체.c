@@ -21,6 +21,7 @@ int main() {
 
 	while (x<N) {
 		min = DELETE;
+		
 		//소수를 찾고 그 소수 이후부터 다시 탐색한다
 		for (int j = location; j < N-1; j++) {
 			if (arr[j] < min) {
