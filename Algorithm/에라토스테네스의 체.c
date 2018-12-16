@@ -1,9 +1,10 @@
 #include<stdio.h>
 #define DELETE 1009
-//1009´Â 1000ÀÌ»óÀÇ Ã¹¹øÂ° ¼Ò¼ö
+//1009ëŠ” 1000ì´ìƒì˜ ì²«ë²ˆì§¸ ì†Œìˆ˜
 int arr[1001];
 
 int main() {
+
 	int N, K;
 	int x = 0;
 	int num = 0;
@@ -20,7 +21,7 @@ int main() {
 
 	while (x<N) {
 		min = DELETE;
-		//¼Ò¼ö¸¦ Ã£°í ±× ¼Ò¼ö ÀÌÈÄºÎÅÍ ´Ù½Ã Å½»öÇÑ´Ù
+		//ì†Œìˆ˜ë¥¼ ì°¾ê³  ê·¸ ì†Œìˆ˜ ì´í›„ë¶€í„° ë‹¤ì‹œ íƒìƒ‰í•œë‹¤
 		for (int j = location; j < N-1; j++) {
 			if (arr[j] < min) {
 				min = arr[j];
@@ -30,7 +31,7 @@ int main() {
 		P = min;
 		for (int a = 0; a < N-1; a++) {
 			if (arr[a] % P == 0) {
-				//check´Â ÇöÀç Áö¿öÁö´Â ¼ıÀÚ¸¦ ³ªÅ¸³½´Ù
+				//checkëŠ” í˜„ì¬ ì§€ì›Œì§€ëŠ” ìˆ«ìë¥¼ ë‚˜íƒ€ë‚¸ë‹¤
 				check = arr[a];
 				arr[a] = DELETE;
 				num++;
