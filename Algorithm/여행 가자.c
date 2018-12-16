@@ -36,6 +36,7 @@ int main() {
 		if (find(check[q]) != find(check[q+1])) {
 			printf("NO");
 		//	system("pause");
+			
 			return 0;
 		}
 	}
