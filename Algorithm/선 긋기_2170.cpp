@@ -29,19 +29,3 @@
 //int dist(Point &p1, Point &p2) {
 //	return (p1.x - p2.x)*(p1.x - p2.x) + (p1.y - p2.y)*(p1.y - p2.y);
 //}
-
-#include<stdio.h>
-int main(void) {
-	int i, j, k;
-	int line = 5;
-	for (i = 0; i < line; i++) {
-		for (j = line - i; j > 0; j--) {
-			printf(" ");
-		}
-		for (k = 0; k < (2 * i + 1); k++) {
-			printf("*");
-		}
-		printf("\n");
-	}
-	return 0;
-}
