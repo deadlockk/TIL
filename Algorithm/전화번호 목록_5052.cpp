@@ -9,6 +9,7 @@ using namespace std;
 
 int main()
 {
+	
 	int test;
 	scanf("%d", &test);
 
