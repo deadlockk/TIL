@@ -13,6 +13,7 @@ int result = 0;
 queue<int> q;
 
 int main() {
+	
 	int N, M, d, r, c;
 	scanf("%d %d", &N, &M);
 
