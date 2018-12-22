@@ -7,6 +7,7 @@
 #pragma warning(disable:4996)
 
 typedef struct dot {
+	
 	float x, y;
 	float angle;
 }Dot;
