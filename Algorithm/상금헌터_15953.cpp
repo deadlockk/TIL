@@ -4,6 +4,7 @@
 using namespace std;
 
 int moneyA(int a) {
+	
 	int money_A;
 	if (a == 0)
 		money_A = 0;
