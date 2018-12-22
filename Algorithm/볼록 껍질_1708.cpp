@@ -21,6 +21,7 @@ int sort_agl(const void *, const void *);
 int leftmost(const void *, const void *);
 float Angle(int);
 
+
 int main() {
 	int N, ans = 0;
 	int i = 0;
