@@ -30,7 +30,6 @@ int main() {
 				sum += temp[k];
 				n++;
 			}
-
 			double m = ((double)sum) / ((double)n);
 			for (int k = i + 1; k <= j; k++) 
 				tmp += (temp[k] - m)*(temp[k] - m);
