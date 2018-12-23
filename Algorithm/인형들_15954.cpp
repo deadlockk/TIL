@@ -16,7 +16,6 @@ int main() {
 	double distribute = 0.0;
 	double standard_deviation = 0.0;
 	
-	
 	cin >> N >> K;
 	for(int i=1;i<=N;i++)
 		cin >> temp[i];
