@@ -13,6 +13,7 @@ int test[30];
 char xx[5];
 int T, N, p[P_MAX][N_MAX], dep[N_MAX], ind[N_MAX];
 vector<vector<int>> adj;
+
 void dfs(int cur, int par) {
 	for (auto &next : adj[cur]) {
 		if (next == par)
