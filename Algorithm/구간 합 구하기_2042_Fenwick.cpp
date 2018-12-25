@@ -11,6 +11,7 @@ vector<long long> arr;
 vector<long long> tree;
 
 int main() {
+	
 	int N, M, K;
 	int a, b;
 	long long c, difference;
