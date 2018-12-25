@@ -23,6 +23,7 @@ void dfs(int cur, int par) {
 		dfs(next, cur);
 	}
 }
+
 int lca(int u, int v) {
 	if (dep[u] > dep[v])
 		swap(u, v); 
