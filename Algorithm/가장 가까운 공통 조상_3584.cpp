@@ -42,6 +42,7 @@ int lca(int u, int v) {
 	} 
 	return p[0][u];
 }
+
 int main() {
 	int x;
 	test[30] = 1;
