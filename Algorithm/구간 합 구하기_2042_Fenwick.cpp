@@ -21,6 +21,7 @@ int main() {
 	tree.resize(N + 1);
 
 	for (int i = 1; i <= N; i++) {
+		
 		scanf("%lld", &arr[i]);
 		update(i, arr[i]);
 	}
