@@ -6,6 +6,7 @@
 #include <algorithm>
 #define N_MAX 10001
 #define P_MAX 15
+
 using namespace std;
 int test[30];
 char xx[5];
