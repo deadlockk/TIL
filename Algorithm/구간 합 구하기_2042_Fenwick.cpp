@@ -24,8 +24,7 @@ int main() {
 
 	for (int i = 1; i <= N; i++) {		
 		scanf("%lld", &arr[i]);
-		update(i, arr[i]);
-		
+		update(i, arr[i]);	
 	}
 
 	for (int i = 0; i < M + K; i++) {
