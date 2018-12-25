@@ -1,4 +1,5 @@
 #pragma warning (disable:4996)
+
 #include <cstdio>
 #include <string.h>
 #include <vector>
