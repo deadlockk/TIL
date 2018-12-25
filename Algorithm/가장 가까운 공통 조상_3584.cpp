@@ -8,6 +8,7 @@
 #define P_MAX 15
 
 using namespace std;
+
 int test[30];
 char xx[5];
 int T, N, p[P_MAX][N_MAX], dep[N_MAX], ind[N_MAX];
