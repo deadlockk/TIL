@@ -4,6 +4,7 @@
 using namespace std;
 
 int main() {
+	
 	int N;
 	int sentiment;
 	char mirror[101][101];
