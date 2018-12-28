@@ -59,5 +59,6 @@ void dijkstra(int source) {
 		if (dist[i] == INF) printf("INF\n");
 		else printf("%d\n", dist[i]);
 	}
+
 }
 
