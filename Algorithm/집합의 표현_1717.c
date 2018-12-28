@@ -26,11 +26,10 @@ int main() {
 int findSet(int a) {
 	if (N[a] < 0)
 		return a;
-	
 	return N[a] = findSet(N[a]);
 }
 void mergeSet(int a, int b) {
-	a = findSet(a);//�θ� �Ǻ�
+	a = findSet(a);//şÎ¸đ ĆÇş°
 	b = findSet(b);
 	if (a == b)
 		return;
