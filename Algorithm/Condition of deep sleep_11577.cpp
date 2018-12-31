@@ -62,7 +62,6 @@ int sleep() {
 	return ret;
 }
 
-
 int main() {
 	ios::sync_with_stdio(false);
 	cin >> N;
