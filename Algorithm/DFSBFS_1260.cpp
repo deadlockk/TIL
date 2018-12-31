@@ -72,7 +72,7 @@ int main() {
 * \pre First initialize the system.
 * \bug N/A
 * \warning N/A
-* \copyright Sangwon
+* \copyright Sang-won
 */
 void dfs(int x) {
 	if (visit[x] == 0) {
