@@ -92,7 +92,7 @@ void dfs(int x) {
 * \pre First initialize the system.
 * \bug N/A
 * \warning N/A
-* \copyright Sangwon
+* \copyright Sang-won
 */
 void bfs() {
 	queue<int> q;
