@@ -1,7 +1,7 @@
 /**
 @file DFSBFS.cpp
 @brief print DFSBFS.cpp file
-@author Sangwon
+@author Sang-won
 @return none
 @remark none
 @version none
