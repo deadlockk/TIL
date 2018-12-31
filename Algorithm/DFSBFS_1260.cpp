@@ -35,7 +35,7 @@ vector<int> node;
 * \pre First initialize the system.
 * \bug N/A
 * \warning N/A
-* \copyright Sangwon
+* \copyright Sang-won
 */
 int main() {
 	scanf("%d %d %d", &V, &E, &S);
