@@ -33,7 +33,6 @@ int main() {
 			r = i + A[i];
 			p = i;
 		}
-
 		ans = max(ans, A[i]);
 	}
 
