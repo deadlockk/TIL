@@ -55,6 +55,7 @@ void create() {
 
 void swap(int a, int b) {
 	int tmp = 0;
+	
 	tmp = tree[a];
 	tree[a] = tree[b];
 	tree[b] = tmp;
@@ -62,6 +63,7 @@ void swap(int a, int b) {
 
 void del() {
 	printf("%d\n", tree[1]);
+	
 	if (tree[1] != 0) {
 		tree[1] = tree[length];
 		tree[length] = 0;
