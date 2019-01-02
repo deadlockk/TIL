@@ -79,6 +79,7 @@ void recreate() {
 
 	while (index != N) {
 		if (tree[index * 2] < tree[index * 2 + 1]) {
+			
 			if (tree[index] < tree[index * 2 + 1]) {
 				swap(index, index * 2 + 1);
 				index = index * 2 + 1;
