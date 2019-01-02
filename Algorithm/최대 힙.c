@@ -3,6 +3,7 @@
 
 int length = 0;
 int tree[200000] = { 0, };
+
 void del();
 void create();
 void recreate();
