@@ -11,7 +11,6 @@ void insert(int);
 void swap(int, int);
 
 int main() {
-
 	int N = 0, x = 0;
 	int j = 0;
 
