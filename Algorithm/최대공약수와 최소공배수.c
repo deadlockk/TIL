@@ -30,4 +30,5 @@ int gcd(int a, int b) {
 		small = tmp;
 	}
 	return small;
+	
 }
