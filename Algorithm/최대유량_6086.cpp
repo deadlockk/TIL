@@ -10,6 +10,7 @@
 #define INF 1e9
 #define S 0//A
 #define E 25//Z
+
 #define MAX_A 55
 
 using namespace std;
