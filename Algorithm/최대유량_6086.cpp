@@ -48,12 +48,12 @@ int main() {
 		vt[y].emplace_back(x, 0, (int)vt[x].size() - 1);
 	}
 	int res = 0;
-	while (bfs()) {//level graph »ı¼ºµÉ¶§¸¸
+	while (bfs()) {//level graph ìƒì„±ë ë•Œë§Œ
 		memset(work, 0, sizeof(work));
 		while (1) {
 			int flow = dfs(S, INF);//blocking flow
 			if (!flow)break;
-			res += flow;    //Â÷´ÜÀ¯·®ÀÌ 1ÀÌ»óÀÏ °æ¿ì maximum flow¿¡ ´õÇØÁÜ
+			res += flow;    //ì°¨ë‹¨ìœ ëŸ‰ì´ 1ì´ìƒì¼ ê²½ìš° maximum flowì— ë”í•´ì¤Œ
 		}
 	}
 	printf("%d", res);
@@ -71,28 +71,29 @@ bool bfs() {
 		for (auto i : vt[here]) {
 			int there = i.v;
 			int cap = i.cap;
-			if (level[there] == -1 && cap > 0) {    //·¹º§ÀÌ ¾ÆÁ÷ Á¤ÇØÁöÁö ¾Ê¾Ò°í ÀÜ¿©¿ë·®ÀÌ 0ÀÌ»ó
-				level[there] = level[here] + 1;    //ÇöÀçÀÇ ·¹º§°ª+1À» ÇÒ´çÇØÁØ´Ù.
+			if (level[there] == -1 && cap > 0) {    //ë ˆë²¨ì´ ì•„ì§ ì •í•´ì§€ì§€ ì•Šì•˜ê³  ì”ì—¬ìš©ëŸ‰ì´ 0ì´ìƒ
+				level[there] = level[here] + 1;    //í˜„ì¬ì˜ ë ˆë²¨ê°’+1ì„ í• ë‹¹í•´ì¤€ë‹¤.
 				q.push(there);
 			}
 		}
 	}
-	return level[E] != -1;    //E´Â ½ÌÅ©¸¦ ÀÇ¹ÌÇÑ´Ù. ½ÌÅ©ÀÇ ·¹º§ÀÌ ÇÒ´çÀÌ ¾ÈµÈ °æ¿ì 0À» ¸®ÅÏ
+	return level[E] != -1;    //EëŠ” ì‹±í¬ë¥¼ ì˜ë¯¸í•œë‹¤. ì‹±í¬ì˜ ë ˆë²¨ì´ í• ë‹¹ì´ ì•ˆëœ ê²½ìš° 0ì„ ë¦¬í„´
 }
 
 int dfs(int here, int crtcap) {
-	if (here == E)return crtcap;        //½ÌÅ©ÀÏ °æ¿ì ÇöÀç Èå¸£´Â À¯·®À» return 
-	for (int &i = work[here]; i < vt[here].size(); i++) {    //work ¹è¿­¿¡´Â ´ÙÀ½ Å½»ö À§Ä¡°¡ ÀúÀåµÇ¾î ÀÖ´Ù.
+	if (here == E)return crtcap;        //ì‹±í¬ì¼ ê²½ìš° í˜„ì¬ íë¥´ëŠ” ìœ ëŸ‰ì„ return 
+	for (int &i = work[here]; i < vt[here].size(); i++) {    //work ë°°ì—´ì—ëŠ” ë‹¤ìŒ íƒìƒ‰ ìœ„ì¹˜ê°€ ì €ì¥ë˜ì–´ ìˆë‹¤.
 		int there = vt[here][i].v;
 		int cap = vt[here][i].cap;
-		if (level[here] + 1 == level[there] && cap>0) {    //·¹º§ ±×·¡ÇÁ°¡ 1¸¸Å­ Å©°í ÀÜ¿© ¿ë·®ÀÌ 0 ÀÌ»óÀÎ °£¼±
-			int c = dfs(there, min(crtcap, cap));        //dfs·Î ´ÙÀ½ À§Ä¡ Å½»ö
-			if (c> 0) {        //½ÌÅ©±îÁö µµ´ŞÇÏ¿© Èå¸£´Â Â÷´ÜÀ¯·®ÀÌ 0 ÀÌ»óÀÏ °æ¿ì 
-				vt[here][i].cap -= c;    //ÇöÀç ¿ë·®¿¡¼­ Â÷´Ü À¯·®¸¸Å­À» »©ÁÜ
-				vt[there][vt[here][i].rev].cap += c;    //¿ª¹æÇâ °£¼±¿¡ c¸¸Å­ ¿ë·®À» Ãß°¡ÇØÁÜ
+		if (level[here] + 1 == level[there] && cap>0) {    //ë ˆë²¨ ê·¸ë˜í”„ê°€ 1ë§Œí¼ í¬ê³  ì”ì—¬ ìš©ëŸ‰ì´ 0 ì´ìƒì¸ ê°„ì„ 
+			int c = dfs(there, min(crtcap, cap));        //dfsë¡œ ë‹¤ìŒ ìœ„ì¹˜ íƒìƒ‰
+			if (c> 0) {        //ì‹±í¬ê¹Œì§€ ë„ë‹¬í•˜ì—¬ íë¥´ëŠ” ì°¨ë‹¨ìœ ëŸ‰ì´ 0 ì´ìƒì¼ ê²½ìš° 
+				vt[here][i].cap -= c;    //í˜„ì¬ ìš©ëŸ‰ì—ì„œ ì°¨ë‹¨ ìœ ëŸ‰ë§Œí¼ì„ ë¹¼ì¤Œ
+				vt[there][vt[here][i].rev].cap += c;    //ì—­ë°©í–¥ ê°„ì„ ì— cë§Œí¼ ìš©ëŸ‰ì„ ì¶”ê°€í•´ì¤Œ
 				return c;
 			}
 		}
 	}
+	
 	return 0;
 }
