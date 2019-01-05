@@ -95,6 +95,6 @@ int dfs(int here, int crtcap) {
 			}
 		}
 	}
-	
+
 	return 0;
 }
