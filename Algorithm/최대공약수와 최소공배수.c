@@ -29,6 +29,5 @@ int gcd(int a, int b) {
 		big = small;
 		small = tmp;
 	}
-	return small;
-	
+	return small;	
 }
