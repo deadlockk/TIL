@@ -47,6 +47,7 @@ int main() {
 		vt[x].emplace_back(y, c, (int)vt[y].size());
 		vt[y].emplace_back(x, 0, (int)vt[x].size() - 1);
 	}
+	
 	int res = 0;
 	while (bfs()) {//level graph 생성될때만
 		memset(work, 0, sizeof(work));
