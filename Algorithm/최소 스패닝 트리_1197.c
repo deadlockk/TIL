@@ -15,24 +15,25 @@ int isEmpty();
 void Extract_Min(int);
 
 int main() {
+	
 	int V, E;
 	int u, v, w;
 	int vertex;
 	
 	scanf_s("%d %d", &V, &E);
 
-	for (int i = 0; i < E; i++) {//ÀÎÁ¢Çà·Ä ÀÛ¼º
+	for (int i = 0; i < E; i++) {//ì¸ì ‘í–‰ë ¬ ìž‘ì„±
 		scanf_s("%d %d %d", &u, &v, &w);
 		adj[u - 1][v - 1] = w;
 		adj[v - 1][u - 1] = w;
 	}
 
 	for (int j = 0; j < V; j++) {
-		push(j + 1);//Q¿¡´Ù ¹Ú¾Æ³Ö±â
-		key[j] = INF;//key ¹«ÇÑ´ë·Î ÃÊ±âÈ­
+		push(j + 1);//Qì—ë‹¤ ë°•ì•„ë„£ê¸°
+		key[j] = INF;//key ë¬´í•œëŒ€ë¡œ ì´ˆê¸°í™”
 	}
 
-	key[0] = 0;//source¸¦ ÀÓÀÇ·Î 1·Î Á¤ÇÔ
+	key[0] = 0;//sourceë¥¼ ìž„ì˜ë¡œ 1ë¡œ ì •í•¨
 
 	while (isEmpty()==-1) {
 		Extract_Min(V);
