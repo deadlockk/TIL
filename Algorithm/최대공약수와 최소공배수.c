@@ -23,7 +23,6 @@ int gcd(int a, int b) {
 		big = b;
 		small = a;
 	}
-
 	while (big % small != 0) {
 		tmp = big % small;
 		big = small;
