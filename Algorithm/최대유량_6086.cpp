@@ -43,7 +43,7 @@ int main() {
 			y = b - 'A';
 		else
 			y = b - 'a' + 26;
-		
+
 		vt[x].emplace_back(y, c, (int)vt[y].size());
 		vt[y].emplace_back(x, 0, (int)vt[x].size() - 1);
 	}
