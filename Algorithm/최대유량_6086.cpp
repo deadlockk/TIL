@@ -29,7 +29,6 @@ struct Edge {
 vector<vector<Edge>> vt;
 
 int main() {
-
 	scanf("%d", &N);
 	vt.resize(MAX_A);
 	for (int i = 0; i < N; i++) {
