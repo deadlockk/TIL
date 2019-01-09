@@ -16,7 +16,6 @@ void Extract_Min(int);
 
 int main() {
 	
-
 	int V, E;
 	int u, v, w;
 	int vertex;
