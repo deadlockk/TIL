@@ -62,6 +62,7 @@ void search(int a) {
 			search(i);
 		}
 	}
+	
 	personCnt--;
 	for (auto i = 1; i <= N; i++) {
 		if (P[a][i] == 1) {
