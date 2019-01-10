@@ -6,13 +6,14 @@ using namespace std;
 int graph[500][500];
 
 int main() {
+	
 	int a, b, c;
 	int N, M;
 	int INF = 10001;
-	scanf_s("%d", &N);//µµ½ÃÀÇ °³¼ö
-	scanf_s("%d", &M);//¹ö½ºÀÇ °³¼ö
+	scanf_s("%d", &N);//ë„ì‹œì˜ ê°œìˆ˜
+	scanf_s("%d", &M);//ë²„ìŠ¤ì˜ ê°œìˆ˜
 
-	//±×·¡ÇÁ »ı¼º
+	//ê·¸ë˜í”„ ìƒì„±
 	for (int i = 1; i <= M; i++) {
 		scanf_s("%d %d %d", &a, &b, &c);
 		graph[a][b] = c;
