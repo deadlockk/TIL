@@ -10,10 +10,11 @@ int N, M, O, solvable;
 int P[11][11];
 
 int main() {
+	
 	ios::sync_with_stdio(false);
 	cin >> N >> M;
 
-	//วฎ ผ๖ ภึดย นฎมฆฟก 1
+	//รยฎ ยผรถ ร€ร–ยดร ยนยฎรยฆยฟยก 1
 	for (auto i = 1; i <= M; i++) {
 		cin >> O;
 		for (auto j = 0; j < O; j++) {
