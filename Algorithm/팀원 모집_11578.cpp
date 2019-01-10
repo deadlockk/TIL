@@ -9,8 +9,7 @@ int personCnt, result = 1e9, madeTeam = 0;
 int N, M, O, solvable;
 int P[11][11];
 
-int main() {	
-	
+int main() {		
 	ios::sync_with_stdio(false);
 	cin >> N >> M;
 
