@@ -10,6 +10,7 @@ int N, M, O, solvable;
 int P[11][11];
 
 int main() {		
+	
 	ios::sync_with_stdio(false);
 	cin >> N >> M;
 
