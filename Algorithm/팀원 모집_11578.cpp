@@ -13,7 +13,6 @@ int main() {
 	ios::sync_with_stdio(false);
 	cin >> N >> M;
 
-	//Ç® ¼ö ÀÖ´Â ¹®Á¦¿¡ 1
 	for (auto i = 1; i <= M; i++) {
 		cin >> O;
 		for (auto j = 0; j < O; j++) {
