@@ -15,6 +15,7 @@ int main() {
 		cin >> out >> in;
 		if (i == 0)
 			max = in;
+		
 		else {
 			if (in - out + max > max) {
 				max = in - out + max;
