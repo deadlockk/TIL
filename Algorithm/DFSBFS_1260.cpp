@@ -94,8 +94,7 @@ void dfs(int x) {
 * \warning N/A
 * \copyright Sang-won
 */
-void bfs() {	
-	
+void bfs() {		
 	queue<int> q;
 	q.push(S);
 
