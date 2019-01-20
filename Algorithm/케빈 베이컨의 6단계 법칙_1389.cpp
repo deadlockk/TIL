@@ -11,8 +11,8 @@ void bfs(int);
 vector<int> friends[5001];
 int dist[101];
 int visit[101];
-int N = 0;//À¯ÀúÀÇ ¼ö
-int M = 0;//Ä£±¸ °ü°èÀÇ ¼ö
+int N = 0;//Ã€Â¯Ã€ÃºÃ€Ã‡ Â¼Ã¶
+int M = 0;//Ã„Â£Â±Â¸ Â°Ã¼Â°Ã¨Ã€Ã‡ Â¼Ã¶
 
 int main() {
 	cin.tie(NULL);
@@ -58,7 +58,6 @@ int main() {
 void bfs(int s) {
 	queue<int> q;
 	q.push(s);
-
 
 	while (!q.empty()) {
 		int y = q.front();
