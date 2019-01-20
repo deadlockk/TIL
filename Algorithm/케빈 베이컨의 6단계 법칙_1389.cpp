@@ -31,6 +31,7 @@ int main() {
 		friends[a].push_back(b);
 		friends[b].push_back(a);
 	}
+	
 	for (int i = 1; i <= N; i++) {
 		for (int i = 1; i <= N; i++) {
 			visit[i] = 0;
