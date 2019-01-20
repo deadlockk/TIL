@@ -62,7 +62,6 @@ void bfs(int s) {
 	while (!q.empty()) {
 		int y = q.front();
 		q.pop();
-
 		if (visit[y] == 0) {
 			visit[y] = 1;
 			for (int i = 0; i < friends[y].size(); i++) {
