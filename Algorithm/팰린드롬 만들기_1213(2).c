@@ -52,6 +52,7 @@ int main() {
 		odd = 0;
 		check = name[k];
 		while (name[b]) {
+			
 			if (check == name[b])
 				odd++;
 			else {
