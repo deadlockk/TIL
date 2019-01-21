@@ -31,7 +31,6 @@ void swap(int, int);
 int compare(const void *a, const void *b);
 
 int main() {
-
 	int i = 0, j = 0;
 	int a = 0;
 	int b = 0;
