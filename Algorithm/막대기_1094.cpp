@@ -18,7 +18,6 @@ int main() {
 			binary_num++;
 		X = X / 2;
 	}
-
 	cout << binary_num;
 	return 0;
 }
