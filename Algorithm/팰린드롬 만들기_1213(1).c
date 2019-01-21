@@ -62,6 +62,7 @@ int main() {
 }
 
 void swap(int i, int j) {
+	
 	memset(tmp, 0, 3);
 	tmp[0] = name[0];
 	name[0] = name[i];
