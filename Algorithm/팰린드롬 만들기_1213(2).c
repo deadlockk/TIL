@@ -124,5 +124,6 @@ void swap(int i, int j) {
 }
 
 int compare(const void *a, const void *b) {
+	
 	return strcmp((char*)b, (char*)a);
 }
