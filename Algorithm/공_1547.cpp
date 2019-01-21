@@ -8,6 +8,7 @@ int find(int);
 int cup[4] = { 0,1,2,3 };
 
 int main() {
+	
 	cin.tie(NULL);
 	cout.tie(NULL);
 	ios::sync_with_stdio(false);
