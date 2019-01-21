@@ -1,7 +1,7 @@
 /**
 @file DFSBFS.cpp
 @brief print DFSBFS.cpp file
-@author Sangwon
+@author Sang-won
 @return none
 @remark none
 @version none
@@ -35,7 +35,7 @@ vector<int> node;
 * \pre First initialize the system.
 * \bug N/A
 * \warning N/A
-* \copyright Sangwon
+* \copyright Sang-won
 */
 int main() {
 	scanf("%d %d %d", &V, &E, &S);
@@ -72,7 +72,7 @@ int main() {
 * \pre First initialize the system.
 * \bug N/A
 * \warning N/A
-* \copyright Sangwon
+* \copyright Sang-won
 */
 void dfs(int x) {
 	if (visit[x] == 0) {
@@ -92,9 +92,10 @@ void dfs(int x) {
 * \pre First initialize the system.
 * \bug N/A
 * \warning N/A
-* \copyright Sangwon
+* \copyright Sang-won
 */
-void bfs() {
+void bfs() {		
+	
 	queue<int> q;
 	q.push(S);
 

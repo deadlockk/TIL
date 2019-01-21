@@ -8,11 +8,17 @@ int main() {
 	cout.tie(NULL);
 	ios::sync_with_stdio(false);
 
-	int input=0;
-	cin >> input;
-	for(int i=1;i<=9;i++){
-		
-		cout << input <<" * "<<i<<" = "<<input * i<< "\n";
+	int X;
+	int binary_num=0;
+
+	cin >> X;
+
+	while (X) {
+		if (X % 2 == 1)
+			binary_num++;
+		X = X / 2;
 	}
+
+	cout << binary_num;
 	return 0;
 }

@@ -1,4 +1,5 @@
 #pragma warning (disable :4996)
+
 #include <cstdio>
 #include <vector>
 
@@ -11,6 +12,7 @@ vector<long long> arr;
 vector<long long> tree;
 
 int main() {
+	
 	int N, M, K;
 	int a, b;
 	long long c, difference;
@@ -20,9 +22,9 @@ int main() {
 	arr.resize(N + 1);
 	tree.resize(N + 1);
 
-	for (int i = 1; i <= N; i++) {
+	for (int i = 1; i <= N; i++) {		
 		scanf("%lld", &arr[i]);
-		update(i, arr[i]);
+		update(i, arr[i]);	
 	}
 
 	for (int i = 0; i < M + K; i++) {

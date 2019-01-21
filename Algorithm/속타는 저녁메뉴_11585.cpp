@@ -12,10 +12,11 @@ int current[MAX];
 
 void enQueue(char item){
 		rear = (rear + 1) % N;
-		menu[rear] = item;
+		menu[rear] = item;	
 }
 
 int main() {
+	
 	char item;
 	ios::sync_with_stdio(false);
 	cin >> N;
@@ -25,6 +26,7 @@ int main() {
 	}
 	for (auto i = 0; i < N; i++) {
 		cin >> current[i];
+	
 	}
 	return 0;
 }

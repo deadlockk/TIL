@@ -44,5 +44,6 @@ int sum(int i) {
 		ans += tree[i];
 		i -= (i & -i);
 	}
+	
 	return ans;
 }

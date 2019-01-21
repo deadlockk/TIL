@@ -28,23 +28,24 @@ int main() {
 int dfs(int employee) {
 	int ret = 0;
 	
-	//size´Â Á÷¼Ó»ó»ç¿¡ µş·ÁÀÖ´Â Á÷¿ø ¼ö
+	//sizeëŠ” ì§ì†ìƒì‚¬ì— ë”¸ë ¤ìˆëŠ” ì§ì› ìˆ˜
 	int size = v[employee].size();
 
 	if (size == 0) return 0;
 
-	//ÇöÀç Á÷¿øÀÇ ºÎÇÏ ¸®½ºÆ®
+	//í˜„ì¬ ì§ì›ì˜ ë¶€í•˜ ë¦¬ìŠ¤íŠ¸
 	int* list = new int[size + 1];
 
 	for (int i = 0; i < size; i++) {
 		list[i] = dfs(v[employee][i]);
 	}
 
-	//list[0]ºÎÅÍ list[size-1]±îÁö ³»¸²Â÷¼ø Á¤·Ä
+	//list[0]ë¶€í„° list[size-1]ê¹Œì§€ ë‚´ë¦¼ì°¨ìˆœ ì •ë ¬
 	sort(list, list + size, greater<int>());
 
-	//ÇöÀç Á÷¿øÀÇ ºÎÇÏ ¸®½ºÆ®¿¡¼­ °É¸®´Â ÀüÈ­½Ã°£À» ±¸ÇØ update½ÃÅ²´Ù
+	//í˜„ì¬ ì§ì›ì˜ ë¶€í•˜ ë¦¬ìŠ¤íŠ¸ì—ì„œ ê±¸ë¦¬ëŠ” ì „í™”ì‹œê°„ì„ êµ¬í•´ updateì‹œí‚¨ë‹¤
 	for (int i = 0; i < size; i++) {
+		
 		if (ret < list[i] + (i + 1))
 			ret = list[i] + (i + 1);
 	}

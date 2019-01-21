@@ -1,15 +1,19 @@
 #pragma warning (disable:4996)
+
 #include <cstdio>
 #include <string.h>
 #include <vector>
 #include <algorithm>
 #define N_MAX 10001
 #define P_MAX 15
+
 using namespace std;
+
 int test[30];
 char xx[5];
 int T, N, p[P_MAX][N_MAX], dep[N_MAX], ind[N_MAX];
 vector<vector<int>> adj;
+
 void dfs(int cur, int par) {
 	for (auto &next : adj[cur]) {
 		if (next == par)
@@ -19,6 +23,7 @@ void dfs(int cur, int par) {
 		dfs(next, cur);
 	}
 }
+
 int lca(int u, int v) {
 	if (dep[u] > dep[v])
 		swap(u, v); 
@@ -37,6 +42,7 @@ int lca(int u, int v) {
 	} 
 	return p[0][u];
 }
+
 int main() {
 	int x;
 	test[30] = 1;
