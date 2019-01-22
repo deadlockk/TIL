@@ -28,6 +28,7 @@ int main() {
 }
 
 void brute_force() {
+	
 	int sum = 0;
 	int a = 0;
 	int b = 1;
