@@ -31,6 +31,7 @@ int main() {
 			}
 		}
 	}
+	
 	queue<p> q;
 	int housesNum = 0;
 	int sum = 0;
@@ -48,25 +49,25 @@ int main() {
 				int b = q.front().second;
 				q.pop();
 				sum++;
-				if (house[a][b + 1] == '1') {//µ¿
+				if (house[a][b + 1] == '1') {//ÂµÂ¿
 					if (visit[a][b + 1] == 0) {
 						visit[a][b + 1] = 1;
 						q.push({ a,b + 1 });
 					}
 				}
-				if (house[a][b - 1] == '1') {//¼­
+				if (house[a][b - 1] == '1') {//Â¼Â­
 					if (visit[a][b - 1] == 0) {
 						visit[a][b - 1] = 1;
 						q.push({ a,b - 1 });
 					}
 				}
-				if (house[a + 1][b] == '1') {//³²
+				if (house[a + 1][b] == '1') {//Â³Â²
 					if (visit[a + 1][b] == 0) {
 						visit[a + 1][b] = 1;
 						q.push({ a + 1,b });
 					}
 				}
-				if (house[a - 1][b] == '1') {//ºÏ
+				if (house[a - 1][b] == '1') {//ÂºÃ
 					if (visit[a - 1][b] == 0) {
 						visit[a - 1][b] = 1;
 						q.push({ a - 1,b });
