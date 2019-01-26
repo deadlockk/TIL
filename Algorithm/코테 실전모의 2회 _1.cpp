@@ -13,6 +13,7 @@ bool solution(vector<int> arrA, vector<int> arrB) {
 		return false;
 
 	for (int i = 0; i < arrA.size(); i++) {
+
 		if (arrB[check] == arrA[i]) {
 			x = 1;
 			tmp1 = check; tmp2 = i, tmp3 = i;
