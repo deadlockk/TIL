@@ -56,6 +56,7 @@ bool solution(vector<int> arrA, vector<int> arrB) {
 	return answer;
 }
 int main() {
+	
 	cin.tie(NULL);
 	cout.tie(NULL);
 	ios::sync_with_stdio(false);
