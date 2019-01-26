@@ -6,28 +6,29 @@ using namespace std;
 int dist[101][101];
 
 int main() {
+	
 	int a, b, c;
 	int N, M;
 	int INF = 100001;
-	scanf_s("%d", &N);//µµ½ÃÀÇ °³¼ö
+	scanf_s("%d", &N);//ë„ì‹œì˜ ê°œìˆ˜
 
-	//±×·¡ÇÁ ÃÊ±âÈ­
+	//ê·¸ë˜í”„ ì´ˆê¸°í™”
 	for (int i = 1; i <= N; i++) {
 		for (int j = 1; j <= N; j++) {
 			if (i != j)
 				dist[i][j] = INF;
 		}
 	}
-	scanf_s("%d", &M);//¹ö½ºÀÇ °³¼ö
+	scanf_s("%d", &M);//ë²„ìŠ¤ì˜ ê°œìˆ˜
 
-	//±×·¡ÇÁ »ı¼º
+	//ê·¸ë˜í”„ ìƒì„±
 	for (int i = 1; i <= M; i++) {
 		scanf_s("%d %d %d", &a, &b, &c);
 		if (dist[a][b] > c)
 			dist[a][b] = c;
 	}
 
-	//ÇÃ·ÎÀÌµå¿ö¼È ¾Ë°í¸®Áò
+	//í”Œë¡œì´ë“œì›Œì…œ ì•Œê³ ë¦¬ì¦˜
 	for (int k = 1; k <= N; k++) {
 		for (int i = 1; i <= N; i++) {
 			for (int j = 1; j <= N; j++) {
@@ -36,7 +37,7 @@ int main() {
 		}
 	}
 
-	//Ãâ·Â
+	//ì¶œë ¥
 	for (int i = 1; i <= N; i++) {
 		for (int j = 1; j <= N; j++) {
 			if (dist[i][j] == INF)
