@@ -9,8 +9,7 @@ vector<int> N_v;
 vector<int> M_v;
 
 int binary_search(int x) {
-	int answer = 0;
-	
+	int answer = 0;	
 
 	int left = 0, right = N_v.size();
 
