@@ -41,7 +41,6 @@ int main() {
 					earthworm++;
 					q.push({ i,j });
 					visit[i][j] = 1;
-
 					while (!q.empty()) {
 						int x = q.front().first, y = q.front().second;
 						q.pop();
