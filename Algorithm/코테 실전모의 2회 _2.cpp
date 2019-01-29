@@ -30,6 +30,7 @@ int solution(int l, vector<int> v) {
 	else
 		answer = ceil(max_interval / 2);
 
+	
 	cout << answer << endl;
 
 	return answer;
