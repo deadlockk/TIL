@@ -12,7 +12,7 @@ int main() {
 	ios::sync_with_stdio(false);
 
 	vector<int> n;
-	// 0°ú1À» ÀúÀå ÇÒ º¤ÅÍ »ı¼º
+	// 0ê³¼1ì„ ì €ì¥ í•  ë²¡í„° ìƒì„±
 	vector<int> ind;
 	int k, input;
 	while (true) {
@@ -27,17 +27,17 @@ int main() {
 			n.push_back(input);
 		}
 
-		// 6°³ÀÇ 1 Ãß°¡
+		// 6ê°œì˜ 1 ì¶”ê°€
 		for (int i = 0; i < 6; i++) {
 			ind.push_back(1);
 		}
 		for (int i = 0; i < n.size() - 6; i++) {
 			ind.push_back(0);
 		}
-		// Á¤·Ä
+		// ì •ë ¬
 		sort(ind.begin(), ind.end(),greater<int>());
 
-		//Á¶ÇÕ
+		//ì¡°í•©
 		do {
 			for (int i = 0; i < ind.size(); i++) {
 				if (ind[i] == 1) {
@@ -48,5 +48,6 @@ int main() {
 		} while (prev_permutation(ind.begin(), ind.end()));
 		cout << "\n";
 	}
+	
 	return 0;
 }
