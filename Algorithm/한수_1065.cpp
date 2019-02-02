@@ -29,6 +29,7 @@ int main() {
 		else//N == 1000
 			break;
 	}
+	
 	cout << answer;
 	return 0;
 }
