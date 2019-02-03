@@ -7,6 +7,7 @@ using namespace std;
 vector<int> A;
 
 int binary_search(int x) {
+	
 	int left = 0, right = A.size()-1;
 
 	while (left <= right) {
@@ -28,14 +29,14 @@ int main() {
 	ios::sync_with_stdio(false);
 	int N, M, num;
 
-	//A vector »ý¼º
+	//A vector Â»Ã½Â¼Âº
 	cin >> N;
 	while (N--) {
 		cin >> num;
 		A.push_back(num);
 	}
 	sort(A.begin(), A.end());
-	//M°³ ¼ö ÀÔ·Â
+	//MÂ°Â³ Â¼Ã¶ Ã€Ã”Â·Ã‚
 	cin >> M;
 	for(int i=0;i<M;i++){
 		cin >> num;
