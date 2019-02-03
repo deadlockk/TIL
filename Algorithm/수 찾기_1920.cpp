@@ -7,6 +7,7 @@ using namespace std;
 vector<int> A;
 
 int binary_search(int x) {	
+	
 	int left = 0, right = A.size()-1;
 
 	while (left <= right) {
