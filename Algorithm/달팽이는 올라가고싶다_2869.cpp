@@ -1,5 +1,3 @@
-
-//이분탐색으로
 #include <iostream>
 #include <ios>
 #include <vector>
