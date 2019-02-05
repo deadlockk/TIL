@@ -4,6 +4,7 @@
 #include <queue>
 
 using namespace std;
+
 typedef pair<int, int> p;
 
 int main() {
@@ -23,7 +24,7 @@ int main() {
 	tomato.resize(N);
 	visit.resize(N);
 
-	for (int i = 0; i < N; i++) //ÀÔ·Â
+	for (int i = 0; i < N; i++) //ìž…ë ¥
 		for (int j = 0; j < M; j++) {
 			cin >> input;
 			tomato[i].push_back(input);
@@ -36,7 +37,7 @@ int main() {
 		}
 
 	queue <p> q;
-	for (int i = 0; i < N; i++)//ÀÍÀº Åä¸¶Åä push 
+	for (int i = 0; i < N; i++)//ìµì€ í† ë§ˆí†  push 
 		for (int j = 0; j < M; j++) {
 			if (visit[i][j] == 1)
 				q.push({ i,j });
@@ -58,7 +59,7 @@ int main() {
 			}
 		}
 	}
-	for (int i = 0; i < N; i++)//ÀÍÀº Åä¸¶Åä push 
+	for (int i = 0; i < N; i++)//ìµì€ í† ë§ˆí†  push 
 		for (int j = 0; j < M; j++) {
 			if (visit[i][j] == 0) {
 				cout << -1;
