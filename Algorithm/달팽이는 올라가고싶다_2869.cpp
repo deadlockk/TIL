@@ -31,6 +31,8 @@ int main() {
 	return 0;
 }
 
+//계산식으로 
+
 //#include <iostream>
 //#include <ios>
 //
