@@ -9,6 +9,7 @@ int main() {
 	ios::sync_with_stdio(false);
 	
 	int N, Kim, Lim,tmp,chk=0,answer=0;
+	
 	cin >> N >> Kim >> Lim;
 	tmp = N/2;
 	for (int i = 0; i < tmp+1; i++) {
