@@ -11,7 +11,6 @@ int main() {
 	cin >> N >> Kim >> Lim;
 	tmp = N/2;
 	for (int i = 0; i < tmp+1; i++) {
-		
 		answer++;
 		
 		if (Kim % 2 == 0) {
