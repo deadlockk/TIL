@@ -7,6 +7,7 @@ int main() {
 	cin.tie(NULL);
 	cout.tie(NULL);
 	ios::sync_with_stdio(false);
+	
 	int N, Kim, Lim,tmp,chk=0,answer=0;
 	cin >> N >> Kim >> Lim;
 	tmp = N/2;
