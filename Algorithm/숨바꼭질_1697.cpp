@@ -17,10 +17,11 @@ int main() {
 	visit.resize(100011);
 	cin >> N >> K;
 
-	q.push(N);//¼öºóÀÌ À§Ä¡ Áı¾î ³Ö°í
+	q.push(N);//ìˆ˜ë¹ˆì´ ìœ„ì¹˜ ì§‘ì–´ ë„£ê³ 
 	visit[N] = visitNum;
 
-	while (!q.empty()) {//¿©±â¼­ ¼öºóÀÌ ÀÎÁ¢ ´Ù Áı¾î ³Ö°í
+	//bfs
+	while (!q.empty()) {//ì—¬ê¸°ì„œ ìˆ˜ë¹ˆì´ ì¸ì ‘ ë‹¤ ì§‘ì–´ ë„£ê³ 
 		int sz = q.size();
 
 		visitNum++;
