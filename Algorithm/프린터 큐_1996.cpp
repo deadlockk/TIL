@@ -15,6 +15,7 @@ int main() {
 	int T, N, M, priority, answer = 0;
 	vector<int> printer;
 	cin >> T;
+	
 	for(int i=0;i<T;i++) {
 		queue<p> q;
 		answer = 0;
