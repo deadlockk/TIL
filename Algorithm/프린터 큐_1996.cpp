@@ -29,6 +29,7 @@ int main() {
 			else
 				q.push({ priority,0 });
 		}
+		
 		sort(printer.begin(), printer.end());
 		while (!q.empty()) {
 			if (printer.back() == q.front().first) {
