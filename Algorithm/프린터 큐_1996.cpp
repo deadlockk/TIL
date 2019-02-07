@@ -31,6 +31,7 @@ int main() {
 		}
 		
 		sort(printer.begin(), printer.end());
+		
 		while (!q.empty()) {
 			if (printer.back() == q.front().first) {
 				answer++;
