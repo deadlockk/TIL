@@ -9,6 +9,7 @@ int N, M;
 vector<int> tree;
 
 long long cut(int x) {
+	
 	long long sum = 0;
 	for (int i = 0; i < N; i++) {
 		if (tree[i] - x > 0)
