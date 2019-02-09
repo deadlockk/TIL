@@ -37,7 +37,6 @@ int main() {
 	int cutterHigh = 0, cutterLow = maxTreeHeight,mid;
 
 	while (cutterHigh <= cutterLow) {
-
 		mid = (cutterHigh + cutterLow) / 2;
 		if (cut(mid) > M)
 			cutterHigh = mid + 1;
